@@ -2,10 +2,9 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule],
-  template: `
+    selector: 'app-root',
+    imports: [CommonModule],
+    template: `
     <div class="container">
       <header>
         <h1>{{ groupName }}</h1>
@@ -64,7 +63,7 @@ import { CommonModule } from '@angular/common';
       </footer>
     </div>
   `,
-  styles: [`
+    styles: [`
     * {
       margin: 0;
       padding: 0;
