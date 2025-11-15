@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "nowe-poczatki-meeting:build"
+            "buildTarget": "nowe-poczatki-meeting:build"
           }
         },
         "test": {
