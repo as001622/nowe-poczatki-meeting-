@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "nowe-poczatki-meeting:build:production"
+              "buildTarget": "nowe-poczatki-meeting:build:production"
             },
             "development": {
-              "browserTarget": "nowe-poczatki-meeting:build:development"
+              "buildTarget": "nowe-poczatki-meeting:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -94,5 +94,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
