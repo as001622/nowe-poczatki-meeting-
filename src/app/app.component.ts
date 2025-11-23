@@ -91,6 +91,9 @@ import { CommonModule } from '@angular/common';
           <a [href]="'mailto:' + email" class="email-link">
             {{ email }}
           </a>
+          <a [href]="'tel:' + phone" class="phone-link">
+            📞 {{ phone }}
+          </a>
           <p class="confidentiality">Все обращения конфиденциальны</p>
         </section>
       </main>
@@ -361,7 +364,7 @@ import { CommonModule } from '@angular/common';
     }
 
     .email-link {
-      display: inline-block;
+      display: block;
       font-size: 1.3rem;
       color: white;
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -376,6 +379,25 @@ import { CommonModule } from '@angular/common';
     .email-link:hover {
       transform: translateY(-2px);
       box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+    }
+
+    .phone-link {
+      display: block;
+      font-size: 1.3rem;
+      color: white;
+      background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+      text-decoration: none;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      font-weight: 600;
+      box-shadow: 0 5px 15px rgba(17, 153, 142, 0.4);
+      margin-top: 1rem;
+    }
+
+    .phone-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(17, 153, 142, 0.6);
     }
 
     .confidentiality {
@@ -495,7 +517,8 @@ export class AppComponent {
   ];
 
   // Contact
-  email = 'warszawianowy@anonimowihazardzisci.org';
+  email = 'warszawanowy@anonimowihazardzisci.org';
+  phone = "+48 511 111 399";
 
   // Footer
   footerQuote = 'Только сегодня — вместе мы сильнее';
